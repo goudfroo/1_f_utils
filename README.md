@@ -20,12 +20,12 @@ result = onefcorr('myimgfile_cal.fits')
 result.writeto('myimgfile_cal_1fcorr.fits')
 ```
 
-A default calling sequence on a level 1 calibrated WFSS grism image called `mywfssfile_cal.fits` is as follows:
+A default calling sequence on a level 1 calibrated WFSS grism image called `mywfssfile_rate.fits` is as follows:
 ```
 from one_f_utils import onefcorr_wfss
 from astropy.io import fits
-result = onefcorr('mywfssfile_cal.fits')
-result.writeto('mywfssfile_cal_1fcorr.fits')
+result = onefcorr_wfss('mywfssfile_rate.fits')
+result.writeto('mywfssfile_1fcorr_rate.fits')
 ```
 
 Optional parameters to `onefcorr` and `onefcorr_wfss` are listed and explained within the one_f_utils script.
