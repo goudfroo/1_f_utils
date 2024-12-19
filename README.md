@@ -2,7 +2,7 @@
 1/f correction tools for JWST data
 
 ## one_f_utils.py
-1_f_utils.py performs a correction for 1/f-pattern noise on JWST NIRISS or NIRCam data in imaging or wide field slitless spectroscopy (WFSS) modes. The appropriate function for imaging data is `onefcorr`, for WFSS (grism) data the function is `onefcorr_wfss`.
+one_f_utils.py performs a correction for 1/f-pattern noise on JWST NIRISS or NIRCam data in imaging or wide field slitless spectroscopy (WFSS) modes. The appropriate function for imaging data is `onefcorr`, for WFSS (grism) data the function is `onefcorr_wfss`.
 
 For imaging data, the correction using `onefcorr` is best performed on the level 2 calibrated data (the files ending with 'cal.fits'). Pixels containing sources are being masked in the process. For scenes with significant structure in the background, there is an option to remove a smooth 2-D fit to the background prior to 1/f pattern removal, after which the 2-d background is added back into the image.
 
