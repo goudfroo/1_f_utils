@@ -6,7 +6,7 @@ one_f_utils.py performs a correction for 1/f-pattern noise on JWST NIRISS or NIR
 
 For imaging data, the correction using `onefcorr` is best performed on the level 2 calibrated data (the files ending with 'cal.fits'). Pixels containing sources are being masked in the process. For scenes with significant structure in the background, there is an option to remove a smooth 2-D fit to the background prior to 1/f pattern removal, after which the 2-d background is added back into the image.
 
-For WFSS grism data, the correction using `onefcorr_wfss` needs to be performed on level 1 calibrated data (the files ending with 'rate.fits'). Due to the structure of WFSS grism data, a smooth 2-D fit to the background is subtracted <i>by default</i> prior to 1/f pattern removal (and then added back in after 1/f pattern removal). **Note:** For the `onefcorr_wfss` function to work correctly, users not at STScI **must** have environment variables CRDS_PATH and CRDS_SERVER_URL defined (see https://jwst-crds.stsci.edu/docs/cmdline_bestrefs for details). 
+For WFSS grism data, the correction using `onefcorr_wfss` needs to be performed on level 1 calibrated data (the files ending with 'rate.fits'). Due to the structure of WFSS grism data, a smooth 2-D fit to the background is subtracted <i>by default</i> prior to 1/f pattern removal for this function (and then added back in after 1/f pattern removal). **Note:** For the `onefcorr_wfss` function to work correctly, users not at STScI **must** have environment variables CRDS_PATH and CRDS_SERVER_URL defined (see https://jwst-crds.stsci.edu/docs/cmdline_bestrefs for details). 
 
 The script should be used with care, and results should be inspected for any unintended consequences.
 
