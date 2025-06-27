@@ -29,3 +29,8 @@ result.writeto('mywfssfile_1fcorr_rate.fits')
 ```
 
 Optional parameters to `onefcorr` and `onefcorr_wfss` are listed and explained within the one_f_utils script.
+
+
+## optimize_one_f_params
+
+The optimize_one_f_params folder contains scripts that allow an automatic determination of the optimal parameter values to be used for the `clean_flicker_noise` step in `jwst.pipeline.Detector1Pipeline()` for a given input `uncal.fits` file that represents a NIRISS exposure taken in imaging mode (i.e., with `EXP_TYPE = NIS_IMAGE`).
